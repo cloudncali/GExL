@@ -1,0 +1,17 @@
+# - Config file for the GExL package
+# It defines the following variables
+#  GExL_INCLUDE_DIRS - include directories for GExL
+#  GExL_LIBRARY_DIRS - library directories for GExL (normally not used!)
+#  GExL_LIBRARIES    - libraries to link against
+#  GExL_EXECUTABLE   - the example executable(s)
+ 
+# Tell the user project where to find our headers and libraries
+set(GExL_INCLUDE_DIRS "@GExL_INCLUDE_DIRS@")
+set(GExL_LIBRARY_DIRS "@GExL_LIB_DIR@")
+ 
+# Our library dependencies (contains definitions for IMPORTED targets)
+include("@GExL_CMAKE_DIR@/GExL_LibraryDepends.cmake")
+ 
+# These are IMPORTED targets created by GExL_LibraryDepends.cmake
+set(GExL_LIBRARIES gexl-core gexl-entity)
+set(GExL_EXECUTABLE)
