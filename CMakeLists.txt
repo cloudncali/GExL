@@ -29,7 +29,7 @@ set_option(INSTALL_DOC TRUE BOOL "Set to FALSE to skip build/install Documentati
 
 # setup version numbers
 set(GExL_VERSION_MAJOR 0)
-set(GExL_VERSION_MINOR 0)
+set(GExL_VERSION_MINOR 1)
 set(GExL_VERSION_PATCH 0)
 
 set(GExL_VERSION "${GExL_VERSION_MAJOR}.${GExL_VERSION_MINOR}.${GExL_VERSION_PATCH}")
