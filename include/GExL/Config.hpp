@@ -17,7 +17,7 @@
 /// Define the GExL Major version number
 #define GExL_VERSION_MAJOR 0
 /// Define the GExL Minor version number
-#define GExL_VERSION_MINOR 0
+#define GExL_VERSION_MINOR 1
 
 
 ////////////////////////////////////////////////////////////
