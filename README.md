@@ -6,3 +6,4 @@ A generalize game development library is a tool box full common functions and ut
 #Change Log:
 
 11/23/15: Version 0.0.0: Base Project.
+11/25/15: Version 0.1.0: Implemented MathUtils.
