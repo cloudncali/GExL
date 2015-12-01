@@ -57,7 +57,7 @@ if(INSTALL_DOC)
     add_subdirectory(doc)
 endif()
 # Add all targets to the build-tree export set
-export(TARGETS gexl-core
+export(TARGETS gexl
   FILE "${PROJECT_BINARY_DIR}/GExL_LibraryDepends.cmake")
 
 # Create a GExL_Config.cmake file for the use from the build tree

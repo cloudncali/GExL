@@ -22,12 +22,14 @@ set(HEADER ${INCROOT}/GExL/GExL.hpp)
 set(INC
 	${INCROOT}/GExL_types.hpp
 	${INCROOT}/utils/MathUtil.hpp
+	${INCROOT}/utils/StringUtil.hpp
 	
 )
 
 # core library source files
 set(SRC
 	${SRCROOT}/utils/MathUtil.cpp
+	${SRCROOT}/utils/StringUtil.cpp
 )
 
 if(BUILD_SHARED_LIBS)
