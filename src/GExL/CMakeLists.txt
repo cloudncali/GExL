@@ -22,8 +22,10 @@ set(HEADER ${INCROOT}/GExL/GExL.hpp)
 set(INC
 	${INCROOT}/GExL_types.hpp
 	${INCROOT}/utils/MathUtil.hpp
+	${INCROOT}/utils/Math_types.hpp
 	${INCROOT}/utils/StringUtil.hpp
-	
+	${INCROOT}/utils/String_types.hpp
+	${INCROOT}/utils/TParser.hpp	
 )
 
 # core library source files

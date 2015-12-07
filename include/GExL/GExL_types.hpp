@@ -48,6 +48,7 @@ namespace GExL
     SeverityError = ERROR_LEVEL,  ///< Error severity type
     SeverityFatal = FATAL_LEVEL   ///< Fatal severity type
   };
+
   /* ///<TODO> IMPLEMENT ASSETSYSTEM
   /// Enumeration of AssetLoadTime
   enum AssetLoadTime
