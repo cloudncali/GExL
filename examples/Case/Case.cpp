@@ -1,3 +1,11 @@
+/**
+* Provides a simple example showing case manipulation. 
+*
+* @file examples/Case/Case.cpp
+* @author Jacob Dix
+* @date 20151207 - Initial Release
+*/
+
 #include <iostream>
 #include <GExL/utils/StringUtil.hpp>
 
