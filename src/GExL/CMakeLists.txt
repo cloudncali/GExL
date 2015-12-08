@@ -25,13 +25,31 @@ set(INC
 	${INCROOT}/utils/Math_types.hpp
 	${INCROOT}/utils/StringUtil.hpp
 	${INCROOT}/utils/String_types.hpp
-	${INCROOT}/utils/TParser.hpp	
+	${INCROOT}/utils/TParser.hpp
+	${INCROOT}/assets/AssetManager.hpp
+	${INCROOT}/assets/IAssetHandler.hpp
+	${INCROOT}/assets/TAsset.hpp
+	${INCROOT}/assets/TAssetHandler.hpp	
+	${INCROOT}/logger/FatalLogger.hpp
+	${INCROOT}/logger/FileLogger.hpp
+	${INCROOT}/logger/ScopeLogger.hpp
+	${INCROOT}/logger/StringLogger.hpp
+	${INCROOT}/logger/ILogger.hpp
+	${INCROOT}/logger/Log_macros.hpp
+	${INCROOT}/logger/onullstream
 )
 
 # core library source files
 set(SRC
 	${SRCROOT}/utils/MathUtil.cpp
 	${SRCROOT}/utils/StringUtil.cpp
+	${SRCROOT}/assets/AssetManager.cpp
+	${SRCROOT}/assets/IAssetHandler.cpp
+	${SRCROOT}/logger/FatalLogger.cpp
+	${SRCROOT}/logger/FileLogger.cpp
+	${SRCROOT}/logger/ScopeLogger.cpp
+	${SRCROOT}/logger/StringLogger.cpp
+	${SRCROOT}/logger/ILogger.cpp
 )
 
 if(BUILD_SHARED_LIBS)

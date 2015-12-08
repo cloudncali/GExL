@@ -49,7 +49,7 @@ namespace GExL
     SeverityFatal = FATAL_LEVEL   ///< Fatal severity type
   };
 
-  /* ///<TODO> IMPLEMENT ASSETSYSTEM
+ ///<TODO> IMPLEMENT ASSETSYSTEM
   /// Enumeration of AssetLoadTime
   enum AssetLoadTime
   {
@@ -87,7 +87,6 @@ namespace GExL
 
   /// Declare Asset Handler ID typedef which is used for identifying Asset Handler objects
   typedef std::string typeAssetHandlerID;
-*/
 } // namespace GExL
 #endif // GExL_TYPES_HPP_INCLUDED
 
