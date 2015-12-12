@@ -21,6 +21,7 @@ set(HEADER ${INCROOT}/GExL/GExL.hpp)
 # Library additional include files
 set(INC
 	${INCROOT}/GExL_types.hpp
+	${INCROOT}/utils/TTimer.hpp
 	${INCROOT}/utils/MathUtil.hpp
 	${INCROOT}/utils/Math_types.hpp
 	${INCROOT}/utils/StringUtil.hpp
@@ -36,6 +37,10 @@ set(INC
 	${INCROOT}/logger/StringLogger.hpp
 	${INCROOT}/logger/ILogger.hpp
 	${INCROOT}/logger/Log_macros.hpp
+	${INCROOT}/container/TList.hpp
+	${INCROOT}/container/TArray.hpp
+	${INCROOT}/container/TArray2D.hpp
+	${INCROOT}/container/TArray3D.hpp
 	${INCROOT}/logger/onullstream
 )
 
