@@ -10,7 +10,7 @@
 #include <sstream>
 #include <algorithm>
 #include <GExL/utils/StringUtil.hpp>
-
+#include <time.h>
 namespace GExL
 {
   std::string StringToLowercase(std::string theString)
@@ -25,6 +25,31 @@ namespace GExL
     std::string anUpperString=theString;
     std::transform(anUpperString.begin(), anUpperString.end(), anUpperString.begin(), ::toupper);
     return anUpperString;
+  }
+
+  std::string GetDateString()
+  {
+    time_t anRawTime;
+    struct tm * anTimeInfo;
+    char anBuffer[80];
+
+    time(&anRawTime);
+    anTimeInfo = localtime(&anRawTime);
+    strftime(anBuffer, 80, "%D", anTimeInfo);
+
+    return std::string(anBuffer);
+  }
+  std::string GetTimeString()
+  {
+    time_t anRawTime;
+    struct tm * anTimeInfo;
+    char anBuffer[80];
+
+    time(&anRawTime);
+    anTimeInfo = localtime(&anRawTime);
+    strftime(anBuffer, 80, "%T", anTimeInfo);
+
+    return std::string(anBuffer);
   }
 } // namespace GExL
 

@@ -27,6 +27,16 @@ namespace GExL
   * @return theString with all uppercase.
   **/
   std::string GExL_API StringToUppercase(std::string theString);
+  /**
+  * GetDateString will generated a string with the current date.
+  * @return A string containing todays date in MM/DD/YY format.
+  **/
+  std::string GetDateString();
+  /**
+  * GetDateString will generated a string with the current time.
+  * @return A string containing current time in HH:MM:SS format.
+  **/
+  std::string GetTimeString();
 } // namespace GExL
 
 #endif // STRING_UTIL_HPP_INCLUDED
