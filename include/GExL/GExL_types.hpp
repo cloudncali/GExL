@@ -49,8 +49,8 @@ namespace GExL
     SeverityFatal = FATAL_LEVEL   ///< Fatal severity type
   };
 
- ///<TODO> IMPLEMENT ASSETSYSTEM
-  /// Enumeration of AssetLoadTime
+  ///<TODO> IMPLEMENT ASSETSYSTEM
+   /// Enumeration of AssetLoadTime
   enum AssetLoadTime
   {
     AssetLoadNow = 0, ///< Load the asset now
@@ -87,6 +87,13 @@ namespace GExL
 
   /// Declare Asset Handler ID typedef which is used for identifying Asset Handler objects
   typedef std::string typeAssetHandlerID;
+
+  struct Color
+  {
+    Color(GExL::Uint32 theR = 255, GExL::Uint32 theG = 255, GExL::Uint32 theB = 255, GExL::Uint32 theA = 0) : r(theR), g(theG), b(theB), a(theA)
+    {}
+    GExL::Int32 r, g, b, a;
+  };
 } // namespace GExL
 #endif // GExL_TYPES_HPP_INCLUDED
 
