@@ -231,7 +231,7 @@ namespace GExL
     }
     else
     {
-      WLOG() << "TArray3D:operator[](" << row
+      WLOG() << "TArray3D:operator[](" << level
         << ") level provided exceeds maximum levels of "
         << mLevels << std::endl;
       return TArray2D<TYPE>(mArray.data(), mRows, mColumns, (mLevels-1)*mRows*mColumns + mArray.offset());
