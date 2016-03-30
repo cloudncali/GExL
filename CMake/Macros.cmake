@@ -171,7 +171,7 @@ macro(gexl_add_library target)
   install(TARGETS ${target}
           # IMPORTANT: Add the target library to the "export-set"
           EXPORT GExL_LibraryDepends
-          PUBLIC_HEADER DESTINATION include/GExL COMPONENT devel
+          PUBLIC_HEADER DESTINATION include COMPONENT devel
           RUNTIME DESTINATION bin COMPONENT bin
           LIBRARY DESTINATION lib COMPONENT shlib
           ARCHIVE DESTINATION lib COMPONENT devel)
@@ -179,7 +179,7 @@ macro(gexl_add_library target)
   # install Core library include files
   if(THIS_HEADER_DIR)
     install(DIRECTORY ${THIS_HEADER_DIR}
-            DESTINATION include/GExL
+            DESTINATION include
             COMPONENT devel
             PATTERN ".hg" EXCLUDE)
   endif(THIS_HEADER_DIR)
